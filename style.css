@@ -1,0 +1,363 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "FjallaOne";
+  src: url(font/FjallaOne-Regular.ttf);
+}
+@font-face {
+  font-family: "Just One";
+  src: url(font/JustOne.ttf);
+}
+@font-face {
+  font-family: "Vogue";
+  src: url(font/Vogue.ttf);
+}
+@font-face {
+  font-family: "BeauChat";
+  src: url(font/BeauChat.ttf);
+}
+@font-face {
+  font-family: "Margetha";
+  src: url(font/Margetha.otf);
+}
+@font-face {
+  font-family: "Tabio";
+  src: url(font/Tabio.ttf);
+}
+@font-face {
+  font-family: "Shakila";
+  src: url(font/Shakila.ttf);
+}
+@font-face {
+  font-family: "ArchitectsDaughter-Regular";
+  src: url(font/ArchitectsDaughter-Regular.ttf);
+}
+@font-face {
+  font-family: "charlotte";
+  src: url(font/charlotte.ttf);
+}
+@font-face {
+  font-family: "Annamellia";
+  src: url(font/Annamellia.ttf);
+}
+@font-face {
+  font-family: "InconsolataCondensed-Medium";
+  src: url(font/InconsolataCondensed-Medium.ttf);
+}
+@font-face {
+  font-family: "Capture";
+  src: url(font/Capture.ttf);
+}
+@font-face {
+  font-family: "OurStory";
+  src: url(font/OurStory.ttf);
+}
+@font-face {
+  font-family: "VictoriaMelody";
+  src: url(font/Barbara-Calligraphy.ttf);
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  height: 50px;
+  align-items: center;
+  font-family: 'Just One';
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  width: 45%;
+  justify-content: space-around;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  overflow: hidden;
+  font-family: 'OurStory';
+}
+nav ul li a:hover{
+  font-weight: bold;
+}
+nav h3{
+  margin-right: 75px;
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 576px) {
+  nav ul{
+    display: none;
+  }
+}
+header .article {
+  padding: 165px 0;
+  margin: 0;
+  line-height: normal;
+  text-align: center;
+  background-image: url(Asset/cakep1.jpg);
+  color: white;
+}
+.article .heading{
+  display: block;
+  font-family: 'Capture';
+  font-weight: 900;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 6rem;
+}
+header .article p {
+  display: block;
+  font-family:"VictoriaMelody" ;
+  font-size: 1.7em;
+  letter-spacing: 2px;
+  font-weight: 550;
+  text-align: center;
+  color: white;
+}
+#home{
+  display: block;
+  max-width: 70%;
+  margin: 0 auto 50px;
+  text-align: center;
+  padding: 10% 20% 10% 20%;
+}
+#home b{
+  font-family: 'Just one';
+}
+#home h3{
+  font-family: "Shakila";
+  font-size: 4.2em;
+}
+#home p{
+    text-align: justify;
+    font-family: "InconsolataCondensed-Medium";
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+main{
+  overflow: auto;
+}
+#simbol .judul h2{
+  font-family: 'charlotte';
+  font-size: 5em;
+  text-align: center;
+  background-color: #db7093;
+  color: white;
+  letter-spacing: 2px;
+}
+#simbol .content{
+  float: left;
+  padding: 30px 0;
+  color:#474747;
+  background-color:#EAEAEA;
+  text-align: center;
+  align-content: center;
+}
+.content{
+  display: grid;
+  box-sizing: border-box;
+  padding: 20px 0;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+@media screen and (max-width: 1200px){
+  .content{
+    display: inline;
+  }
+  .content .feature-image{
+    width: 500px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .content .feature-image{
+    width: 250px;
+  }
+  .content{
+    display: inline;
+    padding: 0;
+  }
+
+}
+.content .box{
+  background-color: #E9D460;
+  font-family: "BeauChat";
+  font-size: 1.2em;
+  text-align: center;
+  padding: 1em;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.box:nth-child(odd){
+  background-color: #add8e6;
+}
+.content .box p{
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.box b {
+  font-family: monospace;
+}
+.box h3{
+  font-family: "Just One";
+  font-size: 1.6em;
+  background-color: #ffffe0;
+  border-radius: 250px;
+  padding: 25px;
+}
+.box p{
+  background-color: #faf0e6;
+  padding: 25px;
+  border-radius: 50px;
+}
+.feature-image {
+  width: 280px;
+  object-position: center;
+  border-radius: 20px;
+}
+main .judul2{
+  font-family: 'Just One';
+  font-size: 5em;
+  text-align: center;
+  background-image: url(Asset/caption.jpg);
+  margin: 0;
+  align-items: center;
+  color: white;
+  display: flex;
+  padding: 5% 5% 5% 5%;
+  text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.2);
+}
+.container{
+  background-color: #8fbc8f;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 9% 9% 10% 9%;
+}
+@media screen and (max-width: 768){
+  .container{
+    display: inline;
+  }
+  .judul2 h2{
+    font-size: 1em;
+    padding-left: 0;
+  }
+}
+.container .boxx{
+  color: white;
+  padding: 70px;
+  font-size: 1em;
+  text-align: center;
+  align-items: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  font-family: "BeauChat";
+  letter-spacing: 1px;
+  border-radius: 230px;
+  background-color: #2f4f4f;
+  padding: 4em;
+}
+.boxx:nth-child(odd){
+  background-color: lavender;
+  color: #34495e;
+  padding: 40px;
+}
+footer {
+  padding: 0.5px;
+  color: white;
+  background-color: #2f4f4f;
+  text-align: center;
+  font-family: "BeauChat";
+}
+.feature{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fffaf0;
+  padding: 5% 9% 10% 9%;
+  align-items: center;
+}
+img{
+    width: 250px;
+    border-radius: 60px;
+}
+.feature .image-bos{
+  padding: 10px;
+}
+.image-bos:nth-child(odd){
+  background-color: #fff0f5;
+  border-radius: 60px;
+}
+#galley{
+  background-color: #bdb76b;
+  border-radius: 50px;
+}
+@media screen and (max-width:1000px){
+  .feature .image-bos img{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.judul3{
+  font-family: "Annamellia";
+  text-align: center;
+  font-size: 4em;
+  color: #8080000;
+  background-color: #fffaf0;
+  border-radius: 100px;
+}
+#me .profil {
+  font-family: "BeauChat";
+  background-color: #ffe4e1;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 3% 9% 3% 9%;
+  font-size: 1.5em;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+}
+.bio{
+  color: #a0522d;
+  padding: 1% 1% 1% 1%;
+  font-size: 0.8em;
+}
+.judul4{
+  font-family: "charlotte";
+  font-size: 3em;
+  background-color: white;
+  border-radius: 100px;
+  text-align: center;
+}
+@media screen and (max-width: 1000px) {
+#home{
+  width: 900px;
+}
+}
+.image{
+  background-color: white;
+  width: 210px;
+  padding: 0px 0 0px 0;
+  border-radius: 130px;
+  justify-content: center;
+}
+.image img{
+  width: 120px;
+}
+.image p{
+  text-align: left;
+}
+@media screen and (max-width: 576) {
+  .profil{
+    display: inline;
+  }
+}
